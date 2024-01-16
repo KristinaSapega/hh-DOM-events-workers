@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+  }
+
+  
+#empty-zone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; 
+  }
+
+#creation-zone {
+    width: 130px;
+    height: 130px;
+    background-color: purple;
+    margin: 50px;
+    margin-bottom: 555px;
+  }
+
+#left-and-right-zones {
+    display: flex;
+    flex: 1;
+  }
+
+#left-zone,
+#right-zone {
+    width: 475px;
+    height: 450px;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px; 
+}
+
+#left-zone {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+}
+
+#right-zone {
+    background-color: #e0e0e0;
+    position: relative;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: move;
+    position: absolute;
+  }
