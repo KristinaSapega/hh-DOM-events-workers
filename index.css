@@ -1,29 +1,36 @@
 body {
     margin: 0;
-    display: flex;
-    height: 100vh;
-  }
+}
 
-  
+
 #empty-zone {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh; 
-  }
+    margin-top: 0px;
+}
 
 #creation-zone {
-    width: 130px;
-    height: 130px;
-    background-color: purple;
-    margin: 50px;
-    margin-bottom: 555px;
-  }
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    touch-action: none;
+    position: absolute;
+    z-index: 1;
+}
 
 #left-and-right-zones {
+    margin-top: 50px;
     display: flex;
     flex: 1;
-  }
+    margin-left: 20px;
+}
 
 #left-zone,
 #right-zone {
@@ -32,7 +39,7 @@ body {
     border: 1px solid #ccc;
     position: relative;
     overflow: hidden;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 #left-zone {
@@ -40,7 +47,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    
+
 }
 
 #right-zone {
@@ -52,6 +59,7 @@ body {
     width: 100px;
     height: 100px;
     margin: 5px;
-    cursor: move;
+    cursor: grab;
     position: absolute;
-  }
+    touch-action: none;
+}
